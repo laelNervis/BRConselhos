@@ -36,9 +36,6 @@
         <div class="collapse navbar-collapse" id="headerMenu">
             <ul class="navbar-nav ml-auto text-right">
             <li class="nav-item">
-                <a class="btn btn-outline-light btn-sm" href="#"><i class="bi bi-arrow-left"></i><span class="sr-only">Voltar ao</span> Portal de serviços</a>
-            </li>
-            <li class="nav-item">
                 <a class="btn btn-outline-light btn-sm" tabindex="0" role=link id="high_contrast" aria-checked="false"><i class="bi bi-hexagon-half"></i> Alto contraste</a>
             </li>
             </ul>
@@ -46,213 +43,107 @@
     </nav>
 
     <!-- CONTEÚDO DA PÁGINA -->
-    <main>
-        <div class="row">
-            <div class="col text-center">
-                <h2 class="h3 pt-4 pb-3">Consultar inscritos</h2>
+    <main class="container-fluid">
+        <div class="row mt-5 mb-4">
+            <div class="col col-md-2 offset-1">
+                <a href="">
+                    <div class="card">
+                        <div class="card-header text-dark">Emissão de Boletos</div>
+                        <img src="img/img_example_2.png" class="card-img-bottom" alt="...">
+                    </div>
+                </a>
+            </div>
+            <div class="col col-md-2">
+                <a href="consultar_inscritos.html">
+                    <div class="card">
+                        <div class="card-header text-dark">Consultar inscritos</div>
+                        <img src="img/img_example_2.png" class="card-img-bottom" alt="...">
+                    </div>
+                </a>
+            </div>
+            <div class="col col-md-2">
+                <a href=""> 
+                    <div class="card">
+                        <div class="card-header text-dark">Certidões</div>
+                        <img src="img/img_example_2.png" class="card-img-bottom" alt="...">
+                    </div>
+                </a>
+            </div>
+            <div class="col col-md-2">
+                <a href="">
+                    <div class="card">
+                        <div class="card-header text-dark">Gerar senha de acesso</div>
+                        <img src="img/img_example_2.png" class="card-img-bottom" alt="...">
+                    </div>
+                </a>
+            </div>
+            <div class="col col-md-2">
+                <a href="">
+                    <div class="card">
+                        <div class="card-header text-dark">Consulta de processos</div>
+                        <img src="img/img_example_2.png" class="card-img-bottom" alt="...">
+                    </div>
+                </a>
             </div>
         </div>
-        <div class="row">
-            <div class="col-10 offset-1">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs bg-light pt-3 pl-3 pr-3 border border-bottom-0 rounded-top" id="myTab" role="tablist">
-                    <li class="nav-item">
-                        <!-- Na aba ativa colocar a classe 'active' e aria-selected="true" -->
-                        <a class="nav-link active" id="pf-tab" data-toggle="tab" href="#pf" role="tab" aria-controls="pf" aria-selected="true">Pessoa física</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="pj-tab" data-toggle="tab" href="#pj" role="tab" aria-controls="pj" aria-selected="false">Pessoa jurídica</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="reg-tab" data-toggle="tab" href="#reg" role="tab" aria-controls="reg" aria-selected="false">Nº de registro</a>
-                    </li>
-                </ul>
-                
-                <!-- Tab panes -->
-                <div class="tab-content p-4 border border-top-0 rounded-bottom">
-                    <!-- Colocar a classe 'active' na tab pane correspondente a aba ativa citada acima -->
-                    <div class="tab-pane active" id="pf" role="tabpanel" aria-labelledby="pf-tab">
-                        <form class="mb-4" action="pf_result.html#success">
-                            <!-- Row para os campos de formulário -->
-                            <div class="row">
-                                <div class="form-group col-lg-4 col-md-6 col-12">
-                                    <label for="nome-pf">Nome</label>
-                                    <input type="text" class="form-control" id="nome-pf">
-                                </div>
-                                <div class="form-group col-lg-4 col-md-6 col-12">
-                                    <label for="areaAtuacao-pf">Área de atuação</label>
-                                    <select class="form-control" id="areaAtuacao-pf">
-                                        <option>Selecione</option>
-                                        <option>Opção 01</option>
-                                        <option>Opção 02</option>
-                                        <option>Opção 03</option>
-                                        <option>Opção 04</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-lg-4 col-md-6 col-12">
-                                    <label for="cidade-pf">Cidade</label>
-                                    <select class="form-control" id="cidade-pf">
-                                        <option>Selecione</option>
-                                        <option>Opção 01</option>
-                                        <option>Opção 02</option>
-                                        <option>Opção 03</option>
-                                        <option>Opção 04</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-lg-4 col-md-6 col-12">
-                                    <label for="anoRegistro">Ano de registro no conselho</label>
-                                    <input type="number" class="form-control" id="anoRegistro">
-                                </div>
-                                <div class="form-group col-lg-4 col-md-6 col-12">
-                                    <label for="situacao-pf">Situação no conselho</label>
-                                    <select class="form-control" id="situacao-pf">
-                                        <option>Selecione</option>
-                                        <option>Opção 01</option>
-                                        <option>Opção 02</option>
-                                        <option>Opção 03</option>
-                                        <option>Opção 04</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-lg-4 col-md-6 col-12">
-                                    <label for="subsecao-pf">Subseção do conselho</label>
-                                    <select class="form-control" id="subsecao-pf">
-                                        <option>Selecione</option>
-                                        <option>Opção 01</option>
-                                        <option>Opção 02</option>
-                                        <option>Opção 03</option>
-                                        <option>Opção 04</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- Botão submit -->
-                            <div class="d-flex justify-content-center">
-                                <button type="submit" class="btn btn-info"><i class="bi bi-search"></i> Consultar</button>
-                            </div>
-                        </form>
-
-                        <table id="table-pf" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>Nome</th>
-                                    <th>Número de registro</th>
-                                    <th>Ano de registro</th>
-                                    <th>Situação</th>
-                                    <th>Cidade</th>
-                                    <th>Área de atuação</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                
-                            </tbody>
-                        </table>
+        <div class="row mb-4">
+            <div class="col col-md-2 offset-1">
+                <a href="">
+                    <div class="card">
+                        <div class="card-header text-dark">Consulta de protocolo</div>
+                        <img src="img/img_example_2.png" class="card-img-bottom" alt="...">
                     </div>
-
-                    <div class="tab-pane" id="pj" role="tabpanel" aria-labelledby="pj-tab">
-                        <form class="mb-4" action="pj_result.html#success">
-                            <div class="row">
-                                <div class="form-group col-lg-4 col-md-6 col-12">
-                                    <label for="nome-pj">Nome fantasia ou razão social</label>
-                                    <input type="text" class="form-control" id="nome-pj">
-                                </div>
-                                <div class="form-group col-lg-4 col-md-6 col-12">
-                                    <label for="nome-socio">Nome do sócio</label>
-                                    <input type="text" class="form-control" id="nome-socio">
-                                </div>
-                                <div class="form-group col-lg-4 col-md-6 col-12">
-                                    <label for="areaAtuacao-pj">Área de atuação</label>
-                                    <select class="form-control" id="areaAtuacao-pj">
-                                        <option>Selecione</option>
-                                        <option>Opção 01</option>
-                                        <option>Opção 02</option>
-                                        <option>Opção 03</option>
-                                        <option>Opção 04</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-lg-4 col-md-6 col-12">
-                                    <label for="cidade-pj">Cidade</label>
-                                    <select class="form-control" id="cidade-pj">
-                                        <option>Selecione</option>
-                                        <option>Opção 01</option>
-                                        <option>Opção 02</option>
-                                        <option>Opção 03</option>
-                                        <option>Opção 04</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-lg-4 col-md-6 col-12">
-                                    <label for="situacao-pj">Situação no conselho</label>
-                                    <select class="form-control" id="situacao-pj">
-                                        <option>Selecione</option>
-                                        <option>Opção 01</option>
-                                        <option>Opção 02</option>
-                                        <option>Opção 03</option>
-                                        <option>Opção 04</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-lg-4 col-md-6 col-12">
-                                    <label for="subsecao-pj">Subseção do conselho</label>
-                                    <select class="form-control" id="subsecao-pj">
-                                        <option>Selecione</option>
-                                        <option>Opção 01</option>
-                                        <option>Opção 02</option>
-                                        <option>Opção 03</option>
-                                        <option>Opção 04</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <button type="submit" class="btn btn-info"><i class="bi bi-search"></i> Consultar</button>
-                            </div>
-                        </form>
-
-                        <table id="table-pj" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>Nome</th>
-                                    <th>Número de registro</th>
-                                    <th>Ano de registro</th>
-                                    <th>Situação</th>
-                                    <th>Cidade</th>
-                                    <th>Área de atuação</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                
-                            </tbody>
-                        </table>
+                </a>
+            </div>
+            <div class="col col-md-2">
+                <a href="">
+                    <div class="card">
+                        <div class="card-header text-dark">Meu cadastro</div>
+                        <img src="img/img_example_2.png" class="card-img-bottom" alt="...">
                     </div>
-                    
-                    <div class="tab-pane" id="reg" role="tabpanel" aria-labelledby="reg-tab">
-
-                        <form class="mb-4" action="reg_result.html#success">
-                            <div class="row">
-                                <div class="form-group col-lg-6 col-md-8 offset-lg-3 offset-md-2 col-12">
-                                    <label for="num-reg">Número de registro</label>
-                                    <input type="text" class="form-control" id="num-reg">
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <button type="submit" class="btn btn-info"><i class="bi bi-search"></i> Consultar</button>
-                            </div>
-                        </form>
-
-                        <table id="table-reg" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th>Nome</th>
-                                    <th>Número de registro</th>
-                                    <th>Ano de registro</th>
-                                    <th>Situação</th>
-                                    <th>Cidade</th>
-                                    <th>Área de atuação</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                
-                            </tbody>
-                        </table>
-
+                </a>
+            </div>
+            <div class="col col-md-2">
+                <a href="">
+                    <div class="card">
+                        <div class="card-header text-dark">Emissão de certidões</div>
+                        <img src="img/img_example_2.png" class="card-img-bottom" alt="...">
                     </div>
+                </a>
+            </div>
+            <div class="col col-md-2">
+                <a href="">
+                    <div class="card">
+                        <div class="card-header text-dark">Processos TED</div>
+                        <img src="img/img_example_2.png" class="card-img-bottom" alt="...">
+                    </div>
+                </a>
+            </div>
+            <div class="col col-md-2">
+                <a href="">
+                    <div class="card">
+                        <div class="card-header text-dark">Processos de inscrição</div>
+                        <img src="img/img_example_2.png" class="card-img-bottom" alt="...">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col col-md-2">
+                <a href="">
+                <div class="card">
+                  <div class="card-header text-dark">Requerimentos online</div>
+                  <img src="img/img_example_2.png" class="card-img-bottom" alt="...">
                 </div>
+                </a>
+            </div>
+            <div class="col col-md-2">
+                <a href="">
+                    <div class="card">
+                        <div class="card-header text-dark">Emissão de taxas</div>
+                        <img src="img/img_example_2.png" class="card-img-bottom" alt="...">
+                    </div>
+                </a>
             </div>
         </div>
     </main>
