@@ -1,6 +1,6 @@
-/* ------------------ */
-/*   ALTO CONTRASTE   */
-/* ------------------ */
+/* -------------------------------------- */
+/*   ALTO CONTRASTE CONSULTAR INSCRITOS   */
+/* -------------------------------------- */
 .alto-contraste, 
 .alto-contraste a,
 .alto-contraste button,
@@ -59,4 +59,25 @@
 .alto-contraste .page-item.active .page-link{
     background-color: #999999 !important;
     border-color: #cccccc !important;
+}
+
+/* ----------------------- */
+/*   ALTO CONTRASTE HOME   */
+/* ----------------------- */
+.alto-contraste div.card{
+    background-color: #343a40 !important;
+}
+
+.alto-contraste a div.card div.card-img-overlay p,
+.alto-contraste a .card div.card-img-overlay p,
+.alto-contraste a div.card div.card-img-overlay div small,
+.alto-contraste a .card div.card-img-overlay div small{
+    color: #f8f9fa !important;
+}
+
+.alto-contraste a:hover div.card div.card-img-overlay p,
+.alto-contraste a:focus .card div.card-img-overlay p,
+.alto-contraste a:hover div.card div.card-img-overlay div small,
+.alto-contraste a:focus .card div.card-img-overlay div small{
+    color: #ffffff !important;
 }

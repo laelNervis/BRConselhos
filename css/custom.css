@@ -22,8 +22,10 @@ footer a{
 }
 
 /* Link-card na index */
-a:hover .card .card-header,
-a:focus .card .card-header{
+a:hover div.card div.card-img-overlay p,
+a:focus .card div.card-img-overlay p,
+a:hover div.card div.card-img-overlay div small,
+a:focus .card div.card-img-overlay div small{
     color: #358597 !important;
 }
 
