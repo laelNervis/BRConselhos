@@ -3,6 +3,9 @@
 //------------------------------------------------------
 $.extend( true, $.fn.dataTable.defaults, {
     searching: false, //Caixa de pesquisa da tabela removida
+    responsive: {
+        details: false
+    },
     lengthChange: false, //Opção do usuário escolher quantos registros exibir por página da tabela removida
     language: { //Tradução para PT-BR
         "emptyTable": "Nenhum registro encontrado",
