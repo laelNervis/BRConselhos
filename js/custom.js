@@ -240,3 +240,12 @@ $(document).ready(function() {
         info: false //Informação da quantidade de registros resutantes da busca removido pois é apenas 1 registro sempre
     });
 } );
+
+//------------------------------------------------------
+// Datatable Responsive Incorrect breakpoints Solution
+//------------------------------------------------------
+$('a[data-toggle="tab"]').on('shown.bs.tab', function(e){
+    $($.fn.dataTable.tables(true)).DataTable()
+       .columns.adjust()
+       .responsive.recalc();
+ });
