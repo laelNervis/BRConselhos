@@ -60,6 +60,10 @@
     border: none;
 }
 
+.alto-contraste .modal-body .text-muted{
+    color: #9c9c9c !important;
+}
+
 .alto-contraste #myTab li a:hover,
 .alto-contraste #myTab li a:focus,
 .alto-contraste #myTab li a.active{
