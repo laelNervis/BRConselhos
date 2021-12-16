@@ -9,7 +9,10 @@
 .alto-contraste select, 
 .alto-contraste textarea:focus,
 .alto-contraste footer,
-.alto-contraste nav
+.alto-contraste nav,
+.alto-contraste .modal-header,
+.alto-contraste .modal-body,
+.alto-contraste .modal-footer
 {
 	color: #ffffff !important;
 	background-color: #000000 !important;
@@ -42,6 +45,21 @@
     background-color: #999999 !important;
 }
 
+.alto-contraste .modal-content{
+    border-color: #ffffff;
+    border-width: 3px;
+}
+
+.alto-contraste .modal-backdrop {
+    background-color: #999999 !important;
+ }
+
+ .alto-contraste .modal-body hr{
+    height: 1px;
+    background-color: #ffffff;
+    border: none;
+}
+
 .alto-contraste #myTab li a:hover,
 .alto-contraste #myTab li a:focus,
 .alto-contraste #myTab li a.active{
@@ -51,6 +69,10 @@
 .alto-contraste table{
     color: #ffffff;
 }
+
+.alto-contraste table td a{
+    text-decoration: underline;
+} 
 
 .alto-contraste .table-striped tbody tr:nth-of-type(odd){
     background-color: #111111 !important;
