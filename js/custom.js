@@ -249,3 +249,12 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function(e){
        .columns.adjust()
        .responsive.recalc();
  });
+
+//-------------------
+// ----- FOOTER -----
+//-------------------
+$(document).ready(function() {
+    if ((document.querySelector('main').offsetHeight) < (window.innerHeight)){
+        document.querySelector('footer').classList.add('footer-relative');
+    }
+} );

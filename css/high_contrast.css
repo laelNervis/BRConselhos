@@ -74,6 +74,7 @@
     color: #ffffff;
 }
 
+.alto-contraste .modal-body a,
 .alto-contraste table td a{
     text-decoration: underline;
 } 
