@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-br">
+<!-- Identicar o idioma dá página correto para os leitores de tela funcionarem corretamente -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+
+    <!-- Datatables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap4.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/high_contrast.css">
+
+    <title>Requerimentos online - CRP-PR</title>
+    <!-- No title sempre identicar "a página atual + Nome do site", 
+        assim o usuário olhando a aba do navegador ou através do leitor de tela compreende exatamente onde está,
+         ou quando for retornar para essa aba consegue encontrar facilmente  -->
+</head>
+
+<body>
+    <nav id="headerNav" class="navbar navbar-expand-md navbar-dark bg-info">
+        <h1 class="d-flex align-items-center col-10 col-md-7">
+            <img src="../img/logo-CRP-PR.jpeg" alt="Logomarca do CRP-PR">
+            <span>Conselho Regional de Psicologia do Paraná</span>
+        </h1>
+        <button class="navbar-toggler col-2 col-md-5" type="button" data-toggle="collapse" data-target="#headerMenu"
+            aria-controls="headerMenu" aria-expanded="false" aria-label="Menu expansível">
+            <span class="navbar-toggler-icon"></span> <!-- Botão do menu sanduíche em dispositivos móveis -->
+        </button>
+
+        <!-- MENU -->
+        <div class="collapse navbar-collapse" id="headerMenu">
+            <ul class="navbar-nav ml-auto text-right">
+                <li class="nav-item">
+                    <a class="btn btn-outline-light btn-sm" href="../index.html"><i class="bi bi-arrow-left"></i><span
+                            class="sr-only">Voltar ao</span> Portal de serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light btn-sm" tabindex="0" role=link id="high_contrast"
+                        aria-checked="false"><i class="bi bi-hexagon-half"></i> Alto contraste</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CONTEÚDO DA PÁGINA -->
+    <main class="container-fluid">
+        <div class="row">
+
+            <!-- Sidebar-->
+            <div id="sidebar" class="col-2">
+                <p class="h5 py-4 text-center font-weight-light">Requerimentos Online</p>
+                <ul class="list-unstyled">
+                    <li class="mt-2"><a href="home.html" class="btn btn-info text-center w-100">Menu inicial</a></li>
+                    <li class="mt-2"><a href="meus-requerimentos.html" class="btn btn-info text-center w-100">Meus
+                            requerimentos</a></li>
+                    <li class="mt-2"><a href="acesso-negado.html" class="btn btn-info text-center w-100">Acesso
+                            negado</a></li>
+                    <li class="mt-2"><a href="form-exemplo.html" class="btn btn-info text-center w-100">Formulário exemplo</a></li>
+                    <li class="mt-4"><a href="../index.html" class="btn btn-outline-info text-center w-100"><i
+                                class="bi bi-box-arrow-left"> </i>Sair</a></li>
+                </ul>
+            </div>
+
+            <!-- Page content-->
+            <div id="page-content-wrapper" class="col-10 pt-3">
+
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb" class="mb-4">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Portal de serviços</a></li>
+                        <li class="breadcrumb-item"><a href="#">Requerimentos online</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Acesso negado</li>
+                    </ol>
+                </nav>
+
+                <!-- Bloco de mensagem -->
+                <div class="row-col block-msg mx-3 my-5 pt-4 pr-5 pb-5 pl-5">
+                    <h2 class="font-weight-light">Acesso negado!</h2>
+                    <p>Infelizmente você não tem permissão para acessar essa funcionalidade.</p>
+                    <a href="home.html" class="btn btn-outline-danger mt-3">Voltar para meus requerimentos</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-info mt-4">
+        <div class="footer-copyright text-center py-3">
+            <small class="text-light">Desenvolvido por <a href="https://www.brconselhos.com.br/">BRConselhos</a></small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- Datatables JS -->
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap4.min.js"></script>
+
+    <!-- JS-Cookie -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/custom.js"></script>
+    <script src="../js/high_contrast.js"></script>
+
+</body>
+
+</html>

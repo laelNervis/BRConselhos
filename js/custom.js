@@ -242,6 +242,36 @@ $(document).ready(function() {
 } );
 
 //------------------------------------------------------
+// Custom settings for MEUS REQUERIMENTOS datatable
+//------------------------------------------------------
+$(document).ready(function() {
+    $('#meusRequerimentos').DataTable({
+        pageLength: 10, //Quantidade máxima de registros exibidos por página da tabela
+        "order": [[ 3, "desc" ]]
+
+    });
+} );
+
+//------------------------------------------------------
+// Custom settings for TAXAS E BOLETOS datatable
+//------------------------------------------------------
+$(document).ready(function() {
+    $('#taxasBoletos').DataTable({
+        paging: false,
+        info: false 
+    });
+} );
+
+//------------------------------------------------------
+// Custom settings for SEGUNDA VIA datatable
+//------------------------------------------------------
+$(document).ready(function() {
+    $('#segundaVia').DataTable({
+        pageLength: 10 //Quantidade máxima de registros exibidos por página da tabela
+    });
+} );
+
+//------------------------------------------------------
 // Datatable Responsive Incorrect breakpoints Solution
 //------------------------------------------------------
 $('a[data-toggle="tab"]').on('shown.bs.tab', function(e){
@@ -258,3 +288,31 @@ $(document).ready(function() {
         document.querySelector('footer').classList.add('footer-relative');
     }
 } );
+
+//---------------------
+// ----- FORM BRC -----
+//---------------------
+
+//Function to apply custom Bootstrap styles in validated inputs
+(function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+
+//Function to set the name file into the input label
+$(document).on('change', '.custom-file-input', function (event) {
+    $(this).next('.custom-file-label').html(event.target.files[0].name);
+})

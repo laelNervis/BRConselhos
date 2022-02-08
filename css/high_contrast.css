@@ -1,6 +1,6 @@
-/* -------------------------------------- */
-/*   ALTO CONTRASTE CONSULTAR INSCRITOS   */
-/* -------------------------------------- */
+/* ------------------ */
+/*   ALTO CONTRASTE   */
+/* ------------------ */
 .alto-contraste, 
 .alto-contraste a,
 .alto-contraste button,
@@ -18,7 +18,16 @@
 	background-color: #000000 !important;
 }
 
-.alto-contraste nav{
+.alto-contraste .brcForm .custom-file-label::after{
+    background-color: #222 !important;
+}
+
+.alto-contraste .brcForm .custom-file-label,
+.alto-contraste .brcForm input[type="file"]{
+    background-color: #000 !important;
+}
+
+.alto-contraste nav#headerNav{
     border-bottom: 1px solid #ffffff;
 }
 
@@ -26,14 +35,14 @@
     border-top: 1px solid #ffffff;
 }
 
-.alto-contraste nav a,
+.alto-contraste #headerMenu a,
 .alto-contraste form button{
     border-color: #ffffff;
     margin: 2px;
 }
 
-.alto-contraste nav a:hover,
-.alto-contraste nav a:focus,
+.alto-contraste #headerMenu a:hover,
+.alto-contraste #headerMenu a:focus,
 .alto-contraste form button:hover,
 .alto-contraste form button:focus{
     border-color: #ffffff;
@@ -88,9 +97,9 @@
     border-color: #cccccc !important;
 }
 
-/* ----------------------- */
-/*   ALTO CONTRASTE HOME   */
-/* ----------------------- */
+/* ------------------------ */
+/*   ALTO CONTRASTE INDEX   */
+/* ------------------------ */
 .alto-contraste div.card{
     background-color: #343a40 !important;
 }
@@ -107,4 +116,54 @@
 .alto-contraste a:hover div.card div.card-img-overlay div small,
 .alto-contraste a:focus .card div.card-img-overlay div small{
     color: #ffffff !important;
+}
+
+/* ----------------------------- */
+/*   ALTO CONTRASTE BREADCRUMB   */
+/* ----------------------------- */
+.alto-contraste nav ol.breadcrumb{
+    border: 1px solid #ffffff;
+    background-color: black !important;
+}
+
+/* ---------------------- */
+/*   ALTO CONTRASTE <HR>  */
+/* ---------------------- */
+.alto-contraste hr{
+    height: 1px;
+    background-color: #666;
+    border: none;
+}
+
+/* ---------------------------- */
+/*   ALTO CONTRASTE MENU-HOME   */
+/* ---------------------------- */
+.alto-contraste ul.menu-home li a:hover,
+.alto-contraste ul.menu-home li a:focus{
+    box-shadow: 0 0 11px rgba(255, 254, 254, 0.986);
+}
+
+/* -------------------------- */
+/*   ALTO CONTRASTE SIDEBAR   */
+/* -------------------------- */
+.alto-contraste #sidebar{
+    background-color: #171818 !important;
+}
+.alto-contraste #sidebar ul li a{
+    border-color: #a3a1a1 !important;
+    border-width: 3px;
+}
+.alto-contraste #sidebar ul li a:hover,
+.alto-contraste #sidebar ul li a:focus{
+    border-color: #ffffff !important;
+}
+
+/* ---------------- */
+/*   NOTIFICAÇÕES   */
+/* ---------------- */
+.alto-contraste div.alert{
+    color: #fff !important;
+    background-color: #333 !important;
+    border-color: #666 !important;
+    border-width: 2px !important;
 }

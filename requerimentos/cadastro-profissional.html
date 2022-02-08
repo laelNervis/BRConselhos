@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="pt-br">
+<!-- Identicar o idioma dá página correto para os leitores de tela funcionarem corretamente -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+
+    <!-- Datatables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap4.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/high_contrast.css">
+
+    <title>Requerimentos online - CRP-PR</title>
+    <!-- No title sempre identicar "a página atual + Nome do site", 
+        assim o usuário olhando a aba do navegador ou através do leitor de tela compreende exatamente onde está,
+         ou quando for retornar para essa aba consegue encontrar facilmente  -->
+</head>
+
+<body>
+    <nav id="headerNav" class="navbar navbar-expand-md navbar-dark bg-info">
+        <h1 class="d-flex align-items-center col-10 col-md-7">
+            <img src="../img/logo-CRP-PR.jpeg" alt="Logomarca do CRP-PR">
+            <span>Conselho Regional de Psicologia do Paraná</span>
+        </h1>
+        <button class="navbar-toggler col-2 col-md-5" type="button" data-toggle="collapse" data-target="#headerMenu"
+            aria-controls="headerMenu" aria-expanded="false" aria-label="Menu expansível">
+            <span class="navbar-toggler-icon"></span> <!-- Botão do menu sanduíche em dispositivos móveis -->
+        </button>
+
+        <!-- MENU -->
+        <div class="collapse navbar-collapse" id="headerMenu">
+            <ul class="navbar-nav ml-auto text-right">
+                <li class="nav-item">
+                    <a class="btn btn-outline-light btn-sm" href="../index.html"><i class="bi bi-arrow-left"></i><span
+                            class="sr-only">Voltar ao</span> Portal de serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light btn-sm" tabindex="0" role=link id="high_contrast"
+                        aria-checked="false"><i class="bi bi-hexagon-half"></i> Alto contraste</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CONTEÚDO DA PÁGINA -->
+    <main class="container-fluid">
+        <div class="row">
+
+            <!-- Sidebar-->
+            <div id="sidebar" class="col-2">
+                <p class="h5 py-4 text-center font-weight-light">Requerimentos Online</p>
+                <ul class="list-unstyled">
+                    <li class="mt-2"><a href="home.html" class="btn btn-info text-center w-100">Menu inicial</a></li>
+                    <li class="mt-2"><a href="meus-requerimentos.html" class="btn btn-info text-center w-100">Meus
+                            requerimentos</a></li>
+                    <li class="mt-2"><a href="acesso-negado.html" class="btn btn-info text-center w-100">Acesso
+                            negado</a></li>
+                    <li class="mt-2"><a href="form-exemplo.html" class="btn btn-info text-center w-100">Formulário exemplo</a></li>
+                    <li class="mt-4"><a href="../index.html" class="btn btn-outline-info text-center w-100"><i
+                                class="bi bi-box-arrow-left"> </i>Sair</a></li>
+                </ul>
+            </div>
+
+            <!-- Page content-->
+            <div id="page-content-wrapper" class="col-10 pt-3">
+
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb" class="mb-4">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Portal de serviços</a></li>
+                        <li class="breadcrumb-item"><a href="#">Requerimentos online</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Cadastro de profissional</li>
+                    </ol>
+                </nav>
+
+                <h2 class="h3 pl-1 mb-4"><small class="font-weight-light">Cadastro de profissional <span class="text-muted">(Etapa 1 de 2)</span></small></h2>
+
+                <form action="cadastro-profissional-2.html" class="row brcForm needs-validation" novalidate>
+                    <div class="col-12">
+                        <fieldset class="px-4 py-2 mb-4">
+                            <legend class="">Dados pessoais</legend>
+                            <div class="row">
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="nomeProfissional">Nome completo</label>
+                                    <input type="text" class="form-control" id="nomeProfissional" required>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="nomeSocial">Nome social</label>
+                                    <input type="text" class="form-control" id="nomeSocial">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="dataNascimento">Data de nascimento</label>
+                                    <input type="text" class="form-control" id="dataNascimento">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="cpf">CPF</label>
+                                    <input type="text" class="form-control" id="cpf" value="010.540.080-34" readonly>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="rg">RG/Identidade/RNE</label>
+                                    <input type="text" class="form-control" id="rg" required>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="orgao">Órgão expedidor</label>
+                                    <input type="text" class="form-control" id="orgao" required>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="estadoExp">Estado expedidor</label>
+                                    <input type="text" class="form-control" id="estadoExp" required>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="dataExp">Data de expedição</label>
+                                    <input type="text" class="form-control" id="dataExp" required>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="nacionalidade">Nacionalidade</label>
+                                    <input type="text" class="form-control" id="nacionalidade">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="naturalidade">Naturalidade</label>
+                                    <input type="text" class="form-control" id="naturalidade">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="sexo">Sexo</label>
+                                    <input type="text" class="form-control" id="sexo">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="doador">Doador de órgão</label>
+                                    <input type="text" class="form-control" id="doador">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="sangue">Tipo sanguíneo</label>
+                                    <input type="text" class="form-control" id="sangue">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="estadoCivil">Estado Civil</label>
+                                    <input type="text" class="form-control" id="estadoCivil">
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="px-4 py-2 mb-4">
+                            <legend class="">Filiação</legend>
+                            <div class="row">
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="nomeMae">Nome da mãe</label>
+                                    <input type="text" class="form-control" id="nomeMae">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="nomePai">Nome do pai</label>
+                                    <input type="text" class="form-control" id="nomePai">
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="px-4 py-2 mb-4">
+                            <legend class="">Informações de contato</legend>
+                            <div class="row">
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="email">E-mail</label>
+                                    <input type="text" class="form-control" id="email" value="fulano1985@gmail.com" readonly>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="telefoneFixo">Telefone fixo</label>
+                                    <input type="text" class="form-control" id="telefoneFixo">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="celular">Celular</label>
+                                    <input type="text" class="form-control" id="celular" required>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="px-4 py-2 mb-4">
+                            <legend class="">Endereço residencial</legend>
+                            <div class="row">
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="cepRes">CEP</label>
+                                    <input type="text" class="form-control" id="cepRes">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="estadoRes">Estado</label>
+                                    <input type="text" class="form-control" id="estadoRes">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="cidadeRes">Cidade</label>
+                                    <input type="text" class="form-control" id="cidadeRes">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="bairroRes">Bairro</label>
+                                    <input type="text" class="form-control" id="bairroRes">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="logradouroRes">Logradouro</label>
+                                    <input type="text" class="form-control" id="logradouroRes">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="numRes">Número</label>
+                                    <input type="number" class="form-control" id="numRes">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="complementoRes">Complemento</label>
+                                    <input type="text" class="form-control" id="complementoRes">
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="px-4 py-2 mb-4">
+                            <legend class="">Endereço comercial</legend>
+                            <div class="row">
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="cepCom">CEP <small class="text-muted">(Comercial)</small></label>
+                                    <input type="text" class="form-control" id="cepCom" required>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="estadoCom">Estado <small class="text-muted">(Comercial)</small></label>
+                                    <input type="text" class="form-control" id="estadoCom" required>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="cidadeCom">Cidade <small class="text-muted">(Comercial)</small></label>
+                                    <input type="text" class="form-control" id="cidadeCom" required>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="bairroCom">Bairro <small class="text-muted">(Comercial)</small></label>
+                                    <input type="text" class="form-control" id="bairroCom" required>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="logradouroCom">Logradouro <small class="text-muted">(Comercial)</small></label>
+                                    <input type="text" class="form-control" id="logradouroCom" required>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="numCom">Número <small class="text-muted">(Comercial)</small></label>
+                                    <input type="number" class="form-control" id="numCom" required>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="complementoCom">Complemento <small class="text-muted">(Comercial)</small></label>
+                                    <input type="text" class="form-control" id="complementoCom">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="telefoneCom">Telefone <small class="text-muted">(Comercial)</small></label>
+                                    <input type="text" class="form-control" id="telefoneCom" required>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="ramoCom">Ramo da atividade</label>
+                                    <input type="text" class="form-control" id="ramoCom">
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="px-4 py-2 mb-4">
+                            <legend class="">Dados de formação</legend>
+                            <div class="row">
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="instituicao">Instituição de ensino</label>
+                                    <input type="text" class="form-control" id="instituicao" required>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="curso">Curso</label>
+                                    <input type="text" class="form-control" id="curso" required>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="dataConclusao">Data de conclusão do curso</label>
+                                    <input type="text" class="form-control" id="dataConclusao" required>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="tituloDe">Título de</label>
+                                    <input type="text" class="form-control" id="tituloDe">
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="px-4 py-2 mb-5">
+                            <legend class="">Autenticação</legend>
+                            <div class="row">
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="senha">Senha</label>
+                                    <input type="password" class="form-control" id="senha" value="12345678" readonly>
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6 col-12">
+                                    <label for="confirmar">Confirmar senha</label>
+                                    <input type="password" class="form-control" id="confirmar" required>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <button type="submit" class="btn btn-lg btn-info font-weight-light col-12 col-md-6 col-lg-3 col-sm-12 float-lg-right offset-lg-0 offset-md-3">Salvar e avançar</button>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <div class="row justify-content-end">
+                            
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-info mt-4">
+        <div class="footer-copyright text-center py-3">
+            <small class="text-light">Desenvolvido por <a href="https://www.brconselhos.com.br/">BRConselhos</a></small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- Datatables JS -->
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap4.min.js"></script>
+
+    <!-- JS-Cookie -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/custom.js"></script>
+    <script src="../js/high_contrast.js"></script>
+
+</body>
+
+</html>
