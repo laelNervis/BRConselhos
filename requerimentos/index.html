@@ -78,15 +78,15 @@
         <div class="tab-content px-4 pt-4 border border-top-0 rounded-bottom">
           <!-- Colocar a classe 'active' na tab pane correspondente a aba ativa citada acima -->
           <div class="tab-pane active" id="login" role="tabpanel" aria-labelledby="login-tab">
-            <form class="mb-4" action="#">
+            <form class="mb-4 needs-validation" action="home.html" novalidate>
               <div class="row">
                 <div class="form-group col-12">
                   <label for="login-user">CPF ou CNPJ</label>
-                  <input type="text" class="form-control" id="login-user">
+                  <input type="text" class="form-control" id="login-user" required>
                 </div>
                 <div class="form-group col-12">
                   <label for="login-pass">Senha</label>
-                  <input type="password" class="form-control" id="login-pass">
+                  <input type="password" class="form-control" id="login-pass" required>
                 </div>
                 <div class="form-group col-12">
                   <button type="submit" class="btn w-100 btn-info">Entrar</button>
@@ -97,7 +97,7 @@
           </div>
 
           <div class="tab-pane" id="register" role="tabpanel" aria-labelledby="register-tab">
-            <form class="mb-2 needs-validation" action="#" novalidate>
+            <form class="mb-2 needs-validation" action="cadastro-profissional.html" novalidate>
               <div class="row">
                 <div class="form-group col-12">
                   <label for="login-user">CPF ou CNPJ</label>
